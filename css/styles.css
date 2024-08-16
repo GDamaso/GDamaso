@@ -1,0 +1,143 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color-dark: #800E00;
+    --secondary-color-light: #FCD2CC;
+    --tertiary-color-dark: #057F41;
+    --quaternary-color-light: #8FCCAD;
+    --my-white: #F6EDD9;
+    --my-black: #090A09;
+    --my-yellow: #ffb000;
+}
+
+body {
+    background-image: -webkit-linear-gradient(var(--primary-color-dark), var(--secondary-color-light));
+    color: var(--my-white);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Righteous', cursive;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+}
+
+h2, h3 {
+    color: var(--my-white);
+    text-shadow: 2px 2px 5px var(--tertiary-color-dark);
+}
+
+h6 {
+    color: var(--my-yellow);
+    text-shadow: 2px 2px 5px var(--primary-color-dark);
+}
+
+dt {
+    font-weight: bolder;
+}
+
+#contact h3 {
+    text-shadow: 2px 2px 5px var(--primary-color-dark);
+    color: var(--my-yellow);
+}
+
+.navbar {
+    background-color: var(--primary-color-dark);
+}
+
+ul.navbar-nav a {
+    color: var(--my-white);
+    text-shadow: 2px 2px var(--my-black);
+    transition: all 300ms;
+}
+
+ul.navbar-nav a:hover {
+    transform: scale(1.1) rotate(-2deg);
+    color: var(--tertiary-color-dark);
+}
+
+.navbar-brand {
+    color: var(--my-white);
+    text-shadow: 2px 2px var(--my-black);
+    transition: all 150ms;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1) rotate(-2deg);
+    color: var(--tertiary-color-dark);
+}
+
+#showcase {
+    color: var(--my-white);
+    text-shadow: 5px 5px 5px var(--primary-color-dark);
+    font-weight: 600;
+}
+
+.showcase-ctr {
+    background-image: url(../images/small/profile_background.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fas {
+    color: var(--primary-color-dark);
+    font-size: 5rem;
+    width: 8rem;
+    height: 8rem;
+}
+
+.contact-ctr {
+    background-image: url(../images/large/patagonia-fields_background.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fas-social {
+    transition: all 300ms ease-in-out;
+    background-color: var(--secondary-color-light);
+    font-size: 5rem;
+}
+
+.fas-social:hover {
+    transform: scale(1.2) rotate(360deg);
+    background-color: var(--primary-color-dark);
+}
+
+.bg-fas {
+    background-color: var(--tertiary-color-dark);
+}
+
+.no-style {
+text-decoration: none;
+  color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+footer {
+    background-color: var(--primary-color-dark);
+}
+
+@media only screen and (min-width: 758px) {
+    .showcase-ctr {
+        background-image: url(../images/medium/profile_background.webp);
+    }
+
+    #guitlab { content: url("../images/small/better-berries.webp"); }
+}
+
+@media only screen and (min-width: 1180px) {
+    .showcase-ctr {
+        background-image: url(../images/large/profile_background.webp);
+    }
+
+    #guitlab { content: url("../images/small/better-berries.webp"); }
+}

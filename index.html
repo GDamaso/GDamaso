@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Guilherme Damaso">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d9a75200d9.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <title>Guilherme Damaso's Portfolio</title>
+  <!-- BootStrap CSS-->
+
+</head>
+
+<body>
+  <header>
+    <!-- BStrap navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid fw-semibold">
+        <a class="navbar-brand fs-3" href="#showcase">Guilherme Damaso</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-success"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav fw-bold fs-4">
+            <li class="nav-item">
+              <a class="nav-link" href="#showcase">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <section id="showcase">
+    <!-- Background image and general container conf (+styles) -->
+    <div class="showcase-ctr container-fluid vh-100 p-3">
+      <!-- Content settings-->
+      <div class="text-center vh-100 d-flex flex-column d-flex flex-column justify-content-between mt-5 pt-1">
+        <div>
+          <h2 class="m-1 p-1 fw-bold display-4">Guilherme Damaso</h2>
+          <h1 class="mt-5 p-1 fw-bolder display-3">Software Developer</h1>
+        </div>
+        <div class="mb-5 pb-5">
+          <a class="btn btn-danger mt-5 p-3 mx-auto col-8 col-md-2 opacity-75 fw-bold" href="#about" role="button">TELL
+            ME
+            MORE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="about">
+      <div class="container-fluid text-center d-flex flex-column align-items-center justify-content-between mt-5 pt-5">
+        <div class="container-header mt-5">
+          <div class="row">
+            <h2 class="col m-1 p-3">About</h2>
+          </div>
+          <div class="row">
+            <h3 class="col m-1 p-3">Information and Computer Systems</h3>
+          </div>
+          <div class="justify-content-center align-items-center d-flex w-100">
+            <p class="col-lg-8 text-justify bg-dark p-3">
+              I am a Linux enthusiast and software developer who recently graduated from the Information and
+              Computer Systems program at Camosun College in Victoria. During my studies, I developed various projects
+              that honed my skills across multiple domains.
+
+              I created a Python server running a simplified CLI version of Civilization, controlled through
+              TCP packets, then reimplemented it in django. Additionally, I built a 3 Wordle-style web
+              application
+              using AWS infrastructure: Lambda, RDS, and API
+              Gateway. I also developed a slow-motion, fps, platform archery game in Unity.
+
+              For my capstone project, my team, QuackStack, was selected by the BC Public Service Sustainment Team to
+              develop a prototype to replace a nutrient management calculator used by thousands of BC farmers.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="row d-flex flex-wrap align-items-start justify-content-center mt-3">
+          <div class="col-md-3 col-sm-12 m-1 p-3 d-flex flex-column align-items-center justify-content-center">
+            <i
+              class="fa-brands fa-linux fas bg-fas rounded-circle d-flex align-items-center justify-content-center display-1"></i>
+            <h3 class="m-2 p-2">Linux</h3>
+            <p class=" text-justify bg-dark p-3">From Arch to Debian, I've been distro hoping for over 10 years. One
+              of the main reasons I got into IT, it ignited my curiosity and passion for open source software.</p>
+          </div>
+
+          <div class="col-md-3 col-sm-12 m-1 p-3 d-flex flex-column align-items-center justify-content-center">
+            <i class="fas fa-code bg-fas rounded-circle d-flex align-items-center justify-content-center"></i>
+            <h3 class="m-2 p-2">Programming</h3>
+            <p class=" text-justify bg-dark p-3">C++, Python, TypeScript. I love puzzles, being able to zone into them
+              and
+              meditating on it for hours.</p>
+          </div>
+
+          <div class="col-md-3 col-sm-12 m-1 p-3 d-flex flex-column align-items-center justify-content-center">
+            <i class="fas fa-server bg-fas rounded-circle d-flex align-items-center justify-content-center"></i>
+            <h3 class="m-2 p-2">Self Hosting</h3>
+            <p class="text-justify bg-dark p-3">I self hosted a few different services. I used a couple Cloud Computing
+              platforms together with Proxmox, a private virtual environment, in order to run
+              a few home servers. </p>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container-fluid text-center mt-5 pt-5 p-md-5">
+        <div class="container-header m-2 p-2">
+          <h2 class="m-3 p-3">Portfolio</h2>
+          <h3 class="m-1 p-1">Here are a few cool projects I've built: </h3>
+        </div>
+
+
+        <div class="row justify-content-center mt-5 p-3">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 d-flex justify-content-center">
+            <a href="https://better-berries-test.apps.silver.devops.gov.bc.ca/"><img
+                src="images/small/better-berries.webp" alt="Better-Berries" class="card-img-top rounded"
+                id="guitlab"></a>
+          </div>
+          <div class="col-xl-6 col-lg-4 col-md-6 col-sm-6 d-flex justify-content-center">
+            <div class="card m-1 p-3 text-bg-dark w-100">
+              <a href="https://better-berries-test.apps.silver.devops.gov.bc.ca/" class="no-style">
+                <div class="card-body">
+                  <h3 class="card-title p-1 text-center">Better Berries</h3>
+                  <p class="card-text p-1 text-start">Sponsored by the BC Natural Resources, the Sustainment Team tasked
+                    my capstone group QuackStack, to develop a replacement prototype for an existing nutrient
+                    calculator.
+                    Our goal was to create a mobile first, intuitive app that brought a modern, fresh design to the
+                    calculator. We built this progressive web app with Postgres, Express, React and Node.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--CONTACT-->
+    <section id="contact">
+      <div
+        class="contact-ctr container-fluid text-center d-flex flex-column align-items-center justify-content-center mt-5 p-3 vh-100">
+        <div class="text-center">
+          <h6 class="display-2 fw-bolder mt-5 mb-3 contactHeader">Contact</h6>
+          <h3 class="display-5 fw-semibold mb-5 pb-5">Let's connect!</h3>
+        </div>
+        <div class="w-100 mb-5">
+          <!--SOCIAL MEDIA-->
+          <div id="social" class="text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/guidamaso/">
+                  <i class="fa-brands fa-linkedin bg p-5 rounded-circle fas-social text-success m-4"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/GDamaso">
+                  <i class="fa-brands fa-github bg p-5 rounded-circle fas-about fas-social text-success m-4"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/gdamaso/">
+                  <i class="fa-brands fa-square-instagram bg p-5 rounded-circle fas-social text-success m-4"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!--FOOTER-->
+  <footer>
+    <div class="row w-100 align-items-center justify-content-center pt-3 p-1 mb-0 pb-0">
+      <p class="w-auto">&copy;Guilherme Damaso 2023</p>
+    </div>
+  </footer>
+
+
+
+  <!-- Bootstrap JavaScript Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+<!-- Web Page Created By: Guilherme Damaso -->
