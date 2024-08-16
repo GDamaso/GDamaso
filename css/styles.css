@@ -118,6 +118,15 @@ text-decoration: none;
   color: inherit;
 }
 
+.left-justify {
+  text-align: justify;
+  text-align-last: left ;
+}
+
+.bg-dark-transparent {
+  background: rgba(33, 37, 41, 0.75)
+}
+
 textarea {
     resize: none;
 }
